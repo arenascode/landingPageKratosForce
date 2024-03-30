@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./form.scss";
+import PropTypes from "prop-types"
 
 const Form = ({ setOpenForm }) => {
   const [colorSelected, setColorSelected] = useState("");
@@ -8,10 +9,9 @@ const Form = ({ setOpenForm }) => {
     console.log(e.target.parentNode.dataset.color);
     setColorSelected(e.target.parentNode.dataset.color);
   };
-  const handleForm = () => {
 
-
-  };
+  // const handleForm = () => {
+  // };
 
   return (
     <div id="modalForm">
@@ -127,4 +127,8 @@ const Form = ({ setOpenForm }) => {
     </div>
   );
 };
+
+Form.propTypes = {
+  setOpenForm: PropTypes.func.isRequired
+}
 export default Form;

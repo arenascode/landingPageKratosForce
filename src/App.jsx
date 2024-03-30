@@ -26,7 +26,7 @@ function App() {
           </h1>
           <div className="imgAndTextContainer">
             <div className="imgContainer">
-              <img src="src/assets/img/morrales.png" alt="" />
+              <img src="/assets/img/Morrales.png" alt="" />
             </div>
             <div className="textContainer">
               <h2 className="text_title">Morral Tactico KF 45</h2>
@@ -43,7 +43,7 @@ function App() {
                 </p>
               </div>
               <div className="ctaContainer">
-                <button>¡QUIERO EL MORRAL!</button>
+                <button onClick={() => setOpenForm(true)}>¡QUIERO EL MORRAL!</button>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ function App() {
             </div>
           </div>
           <div className="ctaContainer">
-            <button>¡Llevalo y paga en casa!</button>
+            <button onClick={() => setOpenForm(true)}>¡Llevalo y paga en casa!</button>
           </div>
         </div>
         <div id="colorOptions">
