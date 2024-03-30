@@ -26,7 +26,7 @@ function App() {
           </h1>
           <div className="imgAndTextContainer">
             <div className="imgContainer">
-              <img src="/assets/img/Morrales.png" alt="" />
+              <img src="assets/img/Morrales.png" alt="" />
             </div>
             <div className="textContainer">
               <h2 className="text_title">Morral Tactico KF 45</h2>
